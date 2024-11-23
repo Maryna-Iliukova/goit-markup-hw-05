@@ -579,9 +579,43 @@
         <p class="text">Leave your contacts and we will call you back</p>
         <button type="button" class="close-btn">
           <svg class="close-icon" width="8" height="8">
-            <use href="./images/icons.svg#close"></use>
+            <use href="/images/icons.svg#close"></use>
           </svg>
         </button>
+        <label class="name">
+          Name
+          <input class="input-modal" type="text" name="name" />
+          <svg class="icon-input svg-name" width="12" height="12">
+            <use href="/images/icons.svg#name"></use>
+          </svg>
+        </label>
+        <label>
+          Phone
+          <input class="input-modal" type="tel" name="telephone" />
+          <svg class="icon-input svg-phone" width="13" height="13">
+            <use href="/images/icons.svg#phone"></use>
+          </svg>
+        </label>
+        <label>
+          Email
+          <input class="input-modal" type="email" name="email" />
+          <svg class="icon-input svg-email" width="15" height="12">
+            <use href="/images/icons.svg#email"></use>
+          </svg>
+        </label>
+        <label>
+          Comment
+          <textarea class="input-modal textarea"
+          name="comment"
+          rows="7" placeholder="Text input">
+          </textarea>
+        </label>
+        <label>
+          <input type="checkbox" />
+          I accept the terms and conditions of the <span><a class="modal-span" href="">Privacy Policy</a></span>
+        </label>
+        </select>
+        <button class="main-page-btn" type="submit">Send</button>
       </div>
     </div>
   </body>
