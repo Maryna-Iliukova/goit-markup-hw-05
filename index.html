@@ -553,9 +553,10 @@
           </ul>
         </div>
         <div class="footer-subscribe">
+          <p class="text footer-sl-text">Subscribe</p>
           <form class="form-subscribe" autocomplete="on">
-            <label for="subscribe" class="text footer-sl-text">Subscribe</label>
-            <div class="input-btn">
+            <label for="subscribe" class="label-subscribe">
+              <div class="input-btn">
               <input
                 name="subscribe"
                 class="footer-input"
@@ -563,12 +564,13 @@
                 id="subscribe"
                 placeholder="E-mail"
               />
-              <button class="main-page-btn footer-btn-subscribe" type="submit">
+            </label>
+            <button class="main-page-btn footer-btn-subscribe" type="submit">
                 Subscribe
-                <svg class="telegram" width="24" height="20">
+                <svg class="telegram" width="24" height="24">
                   <use href="./images/icons.svg#telegram"></use>
                 </svg>
-              </button>
+            </button>
             </div>
           </form>
         </div>
@@ -576,12 +578,12 @@
     </footer>
     <div class="backdrop is-open">
       <div class="modal">
-        <p class="text">Leave your contacts and we will call you back</p>
         <button type="button" class="close-btn">
           <svg class="close-icon" width="8" height="8">
             <use href="/images/icons.svg#close"></use>
           </svg>
         </button>
+        <p class="text">Leave your contacts and we will call you back</p>
         <label class="name">
           Name
           <input class="input-modal" type="text" name="name" />
@@ -605,18 +607,19 @@
         </label>
         <label>
           Comment
-          <textarea 
-          class="input-modal textarea"
-          name="comment"
-          rows="7" 
-          placeholder="Text input">
+          <textarea
+            class="input-modal textarea"
+            name="comment"
+            rows="7"
+            placeholder="Text input"
+          >
           </textarea>
         </label>
         <label>
-          <input type="checkbox" name="accept" value="yes"/>
-          I accept the terms and conditions of the <span><a class="modal-span" href="">Privacy Policy</a></span>
+          <input type="checkbox" name="accept" value="yes" />
+          I accept the terms and conditions of the
+          <span><a class="modal-span" href="">Privacy Policy</a></span>
         </label>
-        </select>
         <button class="main-page-btn" type="submit">Send</button>
       </div>
     </div>

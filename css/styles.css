@@ -197,7 +197,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: #ffffff;
     background-color: #4d5ae5;
     text-align: center;
     cursor: pointer;
@@ -397,7 +397,7 @@ img {
 }
 
 .footer-sl-text {
-color: #fff;
+color: #ffffff;
 font-weight: 500;
 margin-bottom: 16px;
 }
@@ -436,47 +436,51 @@ margin-bottom: 16px;
 .footer-social-links-list .social-links:hover, .footer-social-links-list .social-links:focus {
     background-color: #31d0aa;
 }
-.form-subscribe > label {
-    display: block;
+.form-subscribe {
+    display: flex;
+    gap: 24px;
 
 }
 .footer-input {
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
     border-radius: 4px;
     width: 264px;
     height: 40px;
+    font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+        padding-left: 16px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-input:placeholder-shown {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-    color: #fff;
-    padding: 8px 16px;
+.footer-input::placeholder {
+    color: #ffffff;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-btn-subscribe {
     border-radius: 4px;
     padding: 8px 24px;
-    width: 165px;
+    max-width: 165px;
     height: 40px;
     padding: 8px 24px;
     width: 165px;
     height: 40px;
     margin: 0;
-    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .telegram {
+    margin-left: 16px;
     fill: #fff;
 }
 .input-btn {
     display: flex;
     gap: 24px;
 }
-.footer-input:hover::placeholder {
+.footer-input:hover::placeholder, .footer-input:focus::placeholder {
     color: #4d5ae5;
 }
 .footer-input:hover, .footer-input:focus {
@@ -493,8 +497,9 @@ margin-bottom: 16px;
     height: 100%;
     background: rgba(46, 47, 66, 0.4);
     opacity: 0;
-    pointer-events: none;\
+    pointer-events: none;
     z-index: 999;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-open {
     opacity: 1;
@@ -511,7 +516,7 @@ margin-bottom: 16px;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-
+    transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-icon {
     fill: #2E2F42;
@@ -540,6 +545,9 @@ margin-bottom: 16px;
     height: 24px;
     background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: border, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-btn:hover, .close-btn:focus {
