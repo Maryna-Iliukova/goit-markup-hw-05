@@ -462,7 +462,7 @@ margin-bottom: 16px;
 .footer-btn-subscribe {
     border-radius: 4px;
     padding: 8px 24px;
-    max-width: 165px;
+    min-width: 165px;
     height: 40px;
     padding: 8px 24px;
     width: 165px;
@@ -556,7 +556,7 @@ margin-bottom: 16px;
 }
 .label {
     font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
     margin-bottom: 4px;
@@ -622,7 +622,7 @@ margin-bottom: 16px;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-input:checked {
+.checkbox-input:checked + .accept {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
@@ -639,23 +639,12 @@ margin-bottom: 16px;
     fill: #2e2f42;
     position: absolute;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.svg-name {
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
 }
-.svg-phone {
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
-}
-.svg-email {
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
-}
-.input-modal:active .icon-input,
+
+.input-modal:hover .icon-input,
 .input-modal:focus .icon-input {
     fill: #4D5AE5;
 }
